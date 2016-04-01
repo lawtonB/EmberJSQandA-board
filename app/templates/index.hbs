@@ -1,7 +1,8 @@
 <h3>Welcome to the Q and A board</h3>
-
+<hr>
 <ul>
   {{#each model as |question|}}
-    {{question-tile question=question}}
+    {{question-tile question=question destroyQuestion='destroyQuestion'}}
+    <br>
   {{/each}}
 </ul>
