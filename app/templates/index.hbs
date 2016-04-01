@@ -1,1 +1,7 @@
 <h3>Welcome to the Q and A board</h3>
+
+<ul>
+  {{#each model as |question|}}
+    {{question-tile question=question}}
+  {{/each}}
+</ul>
