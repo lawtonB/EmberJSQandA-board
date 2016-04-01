@@ -11,6 +11,9 @@ export default Ember.Component.extend({
       if (confirm('delete question?')) {
         this.sendAction('destroyQuestion', question);
       }
+    },
+    saveAnswer() {
+      this.sendAction('saveAnswer', params);
     }
   }
 });
