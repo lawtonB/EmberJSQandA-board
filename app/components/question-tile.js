@@ -12,7 +12,7 @@ export default Ember.Component.extend({
         this.sendAction('destroyQuestion', question);
       }
     },
-    saveAnswer() {
+    saveAnswer(params) {
       this.sendAction('saveAnswer', params);
     }
   }
