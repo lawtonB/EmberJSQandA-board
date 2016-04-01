@@ -1,10 +1,19 @@
 <h3>Welcome to the Q and A board</h3>
 <hr>
 <ul>
-  {{#each model as |question|}}
+  {{#each model.questions as |question|}}
     {{question-tile question=question destroyQuestion='destroyQuestion' update='update'}}
     <br>
   {{/each}}
 </ul>
 
 {{new-question saveQuestion='saveQuestion'}}
+
+<!-- <ul>
+  {{#each model.answers as |answer|}}
+    <p>{{answer.content}}</p>
+    <p>{{answer.author}}</p>
+  {{/each}}
+</ul> -->
+
+<!-- {{new-answer saveAnswer='saveAnswer'}} -->
