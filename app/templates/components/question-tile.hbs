@@ -1,4 +1,4 @@
-<p>question: {{question.content}}</p>
+{{#link-to 'question' question.id}}<p>question: {{question.content}}</p>{{/link-to}}
 <p>author: {{question.author}}</p>
 <p>notes: {{question.notes}}</p>
 <button {{action 'delete' question}}>delete</button>
