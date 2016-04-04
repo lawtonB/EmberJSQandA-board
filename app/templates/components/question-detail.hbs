@@ -1,3 +1,8 @@
 <p>question: {{question.content}}</p>
 <p>author: {{question.author}}</p>
 <p>notes: {{question.notes}}</p>
+
+{{#each question.answers as |answer|}}
+{{answer.author}}<br>
+{{answer.content}}
+{{/each}}
