@@ -2,7 +2,7 @@
 <p>author: {{question.author}}</p>
 <p>notes: {{question.notes}}</p>
 <hr>
-{{#each question.answers as |answer|}}
+{{#each sortedAnswers as |answer|}}
 <p>answer author: {{answer.author}}</p>
 <p>Answer content: {{answer.content}}</p>
 <p>Answer date: {{answer.date}}</p>
