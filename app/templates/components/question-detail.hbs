@@ -1,9 +1,10 @@
 <p>question: {{question.content}}</p>
 <p>author: {{question.author}}</p>
 <p>notes: {{question.notes}}</p>
-
+<hr>
 {{#each question.answers as |answer|}}
-{{answer.author}}<br>
-{{answer.content}}
-{{answer.date}}
+<p>answer author: {{answer.author}}</p>
+<p>Answer content: {{answer.content}}</p>
+<p>Answer date: {{answer.date}}</p>
+<button {{action 'delete' answer}}>delete answer</button>
 {{/each}}
