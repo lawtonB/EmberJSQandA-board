@@ -1,6 +1,8 @@
+<!-- {{questionAnswered question}} -->
+
 {{#link-to 'question' question.id}}<p>question: {{question.content}}</p>{{/link-to}}
-<!-- <p>author: {{question.author}}</p> -->
-<!-- <p>notes: {{question.notes}}</p> -->
+
+
 <button {{action 'delete' question}}>delete</button>
 <br>
 <div> {{update-question question=question update='update' saveAnswer='saveAnswer'}}
