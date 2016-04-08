@@ -8,10 +8,12 @@ export default Ember.Component.extend({
     },
 
     saveAnswer() {
+      var date = new Date();
       var params = {
         content: this.get('content'),
         author: this.get('author'),
-        question: this.get('question')
+        question: this.get('question'),
+        date: date
       };
       this.set('addNewAnswer', false);
       this.sendAction('saveAnswer', params);

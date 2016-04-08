@@ -1,6 +1,6 @@
 <!-- {{questionAnswered question}} -->
 
-{{#link-to 'question' question.id}}<p>question: {{question.content}}</p>{{/link-to}}
+{{#link-to 'question' question.id}}{{questionAnswered question}}<p>question: {{question.content}}</p>{{/link-to}}
 
 
 <button {{action 'delete' question}}>delete</button>
